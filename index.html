@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bandeirantes Survey Form</title>
+    <link rel="stylsheet" href="styles.css" />    
+  </head>
+  <body>  
+      
+      <h1 id="title">League of Legends Survey Form</h1>
+  
+  <p id="description">Thank you for taking the time to help us improve the game</p>
+
+  <form id="survey-form">
+      <label for="name" id="name-label"> ID <input id="name" type="text" placeholder="Enter your name" required/>          
+      </label>
+      <label for="email" id="email-label"> Email <input id="email" type="email" placeholder="Enter your email" required/>         
+      </label>
+      <label for="number" id="number-label"> Age <input id="number" type="number" min="16" max="100" placeholder="Age"/>         
+      </label>
+
+<label for="dropdown"> What is your favorite role in the game?
+<select id="dropdown">
+<option value="">(select one)</option>
+<option value="1">Top</option>
+<option value="2">Jungle</option>
+<option value="3">Mid</option>
+<option value="4">Adc</option>
+<option value="5">Support</option> 
+</select>
+</label>
+
+<legend>
+  What are your game rank? (required)
+</legend>
+  <label for="platinum-less"><input id="platinum-less" type="radio" name="rank" class="inline" value="1" checked />Platinum or less</label>
+  <label for="emerald-plus"><input id="emerald-plus" type="radio" name="rank" class="inline" value="2" />Emerald or plus</label>
+  
+  <label for="suggestion">Give us suggestions, complains or any aditional comments <textarea id="suggestions" rows="3" cols="30" placeholder="I hate Yasuo..."></textarea>
+  </label>
+  
+  <label for="terms-and-conditions">
+    <input id="terms-and-conditions" class="inline" type="checkbox" required value="1" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and condition</a> </label>
+    <label for="emails-and-updates">
+      <input id="email-and-updates" class="inline" type="checkbox" value="2" />I accept to receive emails about new discounts and future updates.
+  </label>
+
+  <input id="submit" type="submit" value="Submit" />
+
+  </form> 
+  </body>
+</html>
